@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+html, body {
+    background-color: rgb(150, 4, 60);
+    font-family: 'Lato', sans-serif;
+    /*background-image: url("./assets/BackGround.jpg");*/
+    background-image: url("assets/quiz.jpg");
+}
+
+header{
+    background-color: yellowgreen;
+}
+
+h1 h2 a span {
+    color: black;
+}
+#score-list {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    color: rgb(105, 105, 105);    
+}
+ol {
+    list-style: none;
+    counter-reset: li;
+}
+li {
+    counter-increment: li;
+}
+
+li::before {
+    content: "." counter(li);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1.5rem;
+    margin-right: 0.5rem;
+    text-align: right;
+    direction: rtl;
+}
+
+hr {
+    height: 2px;
+    background-color: rgb(128, 0, 64);
+}
+#scoresTitle {
+    padding-right: 1rem;
+}
+.rk7:hover{
+    background-color: darkgoldenrod;
+}
+#startBtn:hover{
+    background-color: orange;
+}
